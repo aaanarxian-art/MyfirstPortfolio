@@ -75,6 +75,15 @@ box-shadow: 5px 10px rgb(125, 41, 133);
     text-align: justify;
     
 }
+@media (max-width: 768px) {
+  .protwo {
+    /* These rules ONLY activate on small mobile screens */
+    margin-right: 20px;   /* Reduces the 250px gap so it fits on a phone */
+    margin-left: 20px;    /* Balances the text on the phone screen */
+    margin-bottom: 40px;  /* Shrinks the massive 200px gap for shorter screens */
+    text-align: left;     /* Prevents ugly spacing between words on narrow screens */
+  }
+}
 .protwo p{
     line-height: 2;
     font-size: 20px;
