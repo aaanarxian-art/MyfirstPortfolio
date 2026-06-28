@@ -1,0 +1,316 @@
+body{
+    background: linear-gradient(to bottom, rgb(156, 53, 53), rgb(65, 65, 231));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+
+}
+
+.topnav{
+     animation: navslide;
+     animation-play-state: running;
+     animation-duration: 0.9s;
+     animation-iteration-count: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+         position: fixed;
+        height: 70px;
+        top: 0;
+        right: 0;
+        left: 0;
+        gap: 25px;
+        margin-right: 20px;
+        color: rgb(0, 153, 255);
+
+        
+       
+}
+.topnav a{
+    color: rgb(184, 204, 211);
+}
+.topnav a:hover{
+    color: rgb(22, 188, 230);
+    text-shadow: 2px 2px 5px rgb(0, 0, 255);
+}
+.container{
+height: 100vh;
+}
+.pageone{
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+.profile{
+
+width: 45%;
+padding: 20px;
+}
+.proone{
+    animation: patricslide, colorchange;
+     animation-play-state: running, running;
+     animation-duration: 1s, 1s;
+     animation-iteration-count: 1, infinite;
+border-style: double;
+height: 400px;
+width: 400px;
+margin-bottom: 200px;
+margin-left: 30px;
+border-radius: 45px;
+
+box-shadow: 5px 10px rgb(125, 41, 133);
+}
+.protwo{
+ 
+    animation: intro;
+    animation-play-state: running;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    color: rgb(108, 177, 177);
+    margin-right: 250px;
+    margin-bottom: 200px;
+    margin-top: 50px;
+    text-align: justify;
+    
+}
+.protwo p{
+    line-height: 2;
+    font-size: 20px;
+
+
+}
+.prothree{
+    line-height: 1;
+    animation: iconsslide;
+    animation-play-state: running;
+    animation-duration: 3.8s;
+    animation-iteration-count: 1;
+}
+.fa-github{
+    color: white;
+    font-size: 45px; 
+}
+.fa-envelope{
+    color: white;
+    font-size: 45px;
+}
+.fa-discord{
+    color: rgb(18, 119, 226);
+    font-size: 45px;
+}
+
+.pagetwo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.aboutme{
+width: 45%;
+padding: 20px;
+}
+.aboutone{
+   
+    text-align: justify;
+    line-height: 1.5;
+   
+}
+.pagetwo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.aboutme{
+width: 45%;
+padding: 20px;
+}
+.aboutone{
+    margin-top: -86px;
+    margin-left: 115px;
+  color: rgb(140, 180, 180);
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 18px;
+    
+   
+}
+.aboutme p{
+color: rgb(116, 170, 170);
+
+}
+.abtgrid{
+    display: grid;
+grid-template-columns: 250px 250px 250px 250px;
+justify-content: center;
+gap: 80px;
+}
+.abt{
+border-style: groove;
+padding: 20px;
+   
+    
+}
+
+
+.techstext{
+    margin-left: 550px;
+    color: aqua;
+}
+
+
+.techstack{
+    color: aquamarine;
+    margin-left: 125px;
+    margin-top: -60px;
+    
+}
+
+.pagethree{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skill{
+    width: 45%;
+   padding: 20px;
+
+}
+.skillone{
+    margin-top: 60px;
+    margin-left: 60px;
+    border-style: inset;
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    padding: 100px;
+    background: linear-gradient(to bottom, lightblue, rgb(227, 192, 128));
+    border-radius: 40px;
+    margin-top: -200px;
+    animation: techslide;
+    animation-play-state: running;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    
+
+
+}
+.fa-html5{
+    font-size: 50px;
+    color: rgb(255, 140, 0);
+}
+.fa-css3-alt{
+    font-size: 50px;
+    color: rgb(48, 105, 238);
+}
+.devicon-cplusplus-plain{
+    font-size: 45px;
+    color: rgb(26, 85, 236);
+}
+
+.skilltwo{
+    text-align: justify;
+}
+.gridcontainer{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 200px 200px 200px;
+    gap: 20px;
+     animation: gridslide;
+    animation-play-state: running;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    
+}
+.gridbox{
+    padding: 20px;
+    border-style: solid;
+    border-radius: 20px;
+text-align: center;
+
+}
+.gbone{
+border-style: ridge;
+border-radius: 15px;
+}
+.gbtwo{
+    color: gray;
+}
+.gbthree{
+
+color: gray;
+}
+.gbfour{
+ border-style: ridge;
+border-radius: 15px;
+}
+.gbfive{
+
+color: gray;
+}
+.gbsix{
+   
+   color: gray;
+}
+
+
+
+
+@keyframes navslide{
+    from{
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes patricslide{
+    from {
+        transform: translatex(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes intro{
+    from{
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes iconsslide{
+    from{transform: translateX(100%);
+    opacity: 0;}
+    to{transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes colorchange{
+    20%{color: rgb(101, 4, 111);}
+    40%{color: rgb(240, 42, 217);}
+    80%{color: rgb(210, 21, 252);}
+    100%{color: rgb(247, 0, 255);}
+}
+@keyframes techslide{
+    from{transform: translateY(100%);
+    opacity: 0;
+    }
+    to{transform: translateY(0);
+    opacity: 1;}
+}
+@keyframes gridslide{
+    from{transform: translateX(100%);
+    opacity: 0;}
+    to{transform: translateX(0);
+    opacity: 1;}
+}
